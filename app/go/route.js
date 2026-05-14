@@ -1,7 +1,7 @@
 const URLS = [
     "https://fpo.digitalwaveitsolution.online",
     "https://fpo.jasrapurgsss.online",
-    "https://fpo-zeta.vercel.app",
+    "https://fpo-zeta.vercel.app"
 ];
 
 export async function GET() {
