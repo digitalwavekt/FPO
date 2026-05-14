@@ -108,9 +108,9 @@ export default function FPOSection() {
                 <div className="text-3xl md:text-4xl font-bold mb-2">
                   {stat.text ? (
                     <span>{stat.text}</span>
-                  ) : (
+                  ) : typeof stat.value === "number" ? (
                     <AnimatedCounter end={stat.value} suffix={stat.suffix} />
-                  )}
+                  ) : null}
                 </div>
                 <div className="text-sm text-white/80 font-medium">{stat.label}</div>
               </motion.div>
