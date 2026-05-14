@@ -9,15 +9,13 @@ export async function GET() {
         try {
             const res = await fetch(url, {
                 method: "HEAD",
-                cache: "no-store",
+                cache: "no-store"
             });
 
             if (res.ok) {
                 return Response.redirect(url, 302);
             }
-        } catch (err) {
-            console.log(`Failed: ${url}`);
-        }
+        } catch { }
     }
 
     return Response.redirect("https://fpo-zeta.vercel.app", 302);
